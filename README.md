@@ -1162,7 +1162,7 @@ wasn't saved on the server. You can detect this case by calling `getNicknames`.
 
 Gets your own Steam Level, and the level you have on a badge for a particular game.
 
-### getUserOwnedApps(steamID[, options], callback)
+### getUserOwnedApps(steamID, options, callback)
 - `steamID` - Either a `SteamID` object or a string that can parse into one
 - `options` - Optional. An object with zero or more of these properties:
     - `includePlayedFreeGames` - Set to `true` to include free games that the user has used before. Default `false`.
@@ -1171,7 +1171,7 @@ Gets your own Steam Level, and the level you have on a badge for a particular ga
 - `callback` - Called when the request completes.
     - `err` - An `Error` object on failure or `null` on success.
     - `response` - The response object
-        - `game_count` - A number indicating how many total apps this user owns
+        - `app_count` - A number indicating how many total apps this user owns
         - `games` - An array of objects:
             - `appid` - The ID of the app
             - `name` - The name of the app
